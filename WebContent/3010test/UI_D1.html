@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<style type="text/css">
+
+body{ /* 전체글씨크기 조정 */
+	font-size: 17px;
+
+}
+
+#total_border{/*초기 전체 레이아웃 지정 */
+	width: 900px;
+	height: 515px;
+	background: #BBDCF2;
+}
+/*------------------------------  */
+#menu{/* 메뉴 전체 레이아웃 */
+	font-weight: bolder;
+	background: #E9EBEE;
+	width: 888px;
+	display: inline-block;
+	margin: 5px;
+	border: 1px solid #ccc;
+	height: 50px;
+}
+.menuContent{
+	float:left;
+	padding: 15px;
+}
+
+#login{
+	float: right;
+	padding: 15px;
+}
+/*------------------------------  */
+
+.boardData{/*테이블 전체 아이디*/
+	border-collapse: collapse;
+	width: 410px;
+	height: 180px;
+	border-top: solid;
+	border-bottom: solid;
+	margin: 10px;
+	text-align: center;
+}
+
+#board1{/* 최근게시글1 */
+	width: 440px;
+	height: 360px;
+	background: #E9EBEE;
+	margin: 5.5px 5.5px 5.5px 5.5px;
+	display: inline-block;	
+	float:left;
+	border: 0.5px solid #ccc;
+}
+
+#board2{/* 최근게시글2 */
+	width: 440px;
+	height: 360px;
+	background: #E9EBEE;
+	margin: 5.5px 5.5px 5.5px 0px;
+	display: inline-block;	
+	float:left;
+	border: 0.5px solid #ccc;
+}
+
+
+
+
+th{ /* 테이블 목차행 */
+	color: white; 
+	padding-left: 10px;
+	border-bottom: 3px solid black;
+	font-size: 15px;
+}
+
+.one>td{ /*테이블 홀수행  */
+	background: #e7e7e7;
+	font-size: 13px;
+}
+
+.two>td{/*테이블 짝수행  */
+	background: #fff;
+	font-size: 13px;
+}
+
+.short{
+	width: 60px;
+}
+
+.boardTitle{ /*  테이블 이름영역 */
+	font-weight: bolder;
+	display: block;
+	line-height: 40px;
+	margin: 25px 0 5px 30px;
+}
+
+/*------------------------------  */
+
+#copy{/* 저작권 전체영역  */
+ 	background: #E9EBEE;
+ 	margin: 5px;
+	border: 1px solid #ccc;
+	height: 50px;
+	text-align: center; 
+}
+#copyText{
+	display:inline-block;
+	margin: auto;
+	line-height: 45px;
+}
+</style>
+
+
+</head>
+<body>
+
+<div id="total_border">
+	<!-- 메뉴 영역 구현  -->
+	<header>
+	<nav>
+	<div id="menu">
+		<span class="menuContent">로고이미지</span>
+		<span class="menuContent">메뉴 1</span>
+		<span class="menuContent">메뉴 2</span>	
+		<span class="menuContent">메뉴 3</span>	
+		<span id="login">로그인</span>	
+	</div>
+	</nav>
+	</header>
+	<hr style="background: #2249AA; height: 4px; margin: 0;">
+	
+	<!-- 게시판 영역 구현  -->
+	<article>
+	<section>
+	<div id="board1">
+		<span class="boardTitle">최근에 등록된 게시글1</span>
+		<table class="boardData">
+			<tr style="background: #9f9f9f;">
+				<th class="short">번호</th><th>제목</th><th>날짜</th>
+			</tr>
+			<tr class="one">
+				<td class="short">5</td><td style="text-align: left;">게시글 5</td><td style="text-align: left;">02/25</td>
+			</tr>
+			<tr class="two">
+				<td class="short">4</td><td style="text-align: left;">게시글 4</td><td style="text-align: left;">02/25</td>
+			</tr>
+			<tr class="one">
+				<td class="short">3</td><td style="text-align: left;">게시글 3</td><td style="text-align: left;">02/23</td>
+			</tr>
+			<tr class="two">
+				<td class="short">2</td><td style="text-align: left;">게시글 2</td><td style="text-align: left;">02/23</td>
+			</tr>
+			<tr class="one">
+				<td class="short">1</td><td style="text-align: left;">게시글 1</td><td style="text-align: left;">02/22</td>
+			</tr>
+		
+		</table>
+	</div>
+	
+	<div id="board2">
+		<span class="boardTitle">최근에 등록된 게시글2</span>
+		<table class="boardData">
+			<tr style="background: #9f9f9f;">
+				<th class="short">번호</th><th>제목</th><th>날짜</th>
+			</tr>
+			<tr class="one">
+				<td class="short">5</td><td style="text-align: left;">게시글 5</td><td style="text-align: left;">02/26</td>
+			</tr>
+			<tr class="two">
+				<td class="short">4</td><td style="text-align: left;">게시글 4</td><td style="text-align: left;">02/25</td>
+			</tr>
+			<tr class="one">
+				<td class="short">3</td><td style="text-align: left;">게시글 3</td><td style="text-align: left;">02/24</td>
+			</tr>
+			<tr class="two">
+				<td class="short">2</td><td style="text-align: left;">게시글 2</td><td style="text-align: left;">02/23</td>
+			</tr>
+			<tr class="one">
+				<td class="short">1</td><td style="text-align: left;">게시글 1</td><td style="text-align: left;">02/23</td>
+			</tr>
+		
+		</table>
+	</div>
+	</section>
+	</article>
+	<hr style="background: #2249AA; height: 4px; margin: 0; clear:both">
+	
+	<!-- 저작권 영역 구현  -->
+	<footer>
+	<div id="copy" >
+		<span id="copyText">Copyright &copy; Create By XXXXX</span>
+	</div>
+	</footer>
+
+</div>
+
+
+
+</body>
+</html>

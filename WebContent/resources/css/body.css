@@ -1,0 +1,6 @@
+@charset "UTF-8";
+
+/* body 태그를 선택한다. */
+body {
+	color:tomato; /* 글자색 토마토  */
+}

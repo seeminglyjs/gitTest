@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" ></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$("#btnCopy").click(function(){
+		console.log("#btnCopy")
+		$("#ori").clone().appendTo($("#copy"))
+	})
+	$("#btnDelete").click(function(){
+		console.log("#btnDelete")
+		$("#copy div").remove()
+	})
+})
+</script>
+
+<style type="text/css">
+#ori{
+	width:200px;
+	height:200px;
+	background:orangered;
+}
+</style>
+
+</head>
+<body>
+	<div id ="ori">
+	<button id="btnCopy">복사하기</button>
+	<button id="btnDelete">삭제하기</button>
+	</div>
+	<div id="copy"></div>
+</body>
+</html>
